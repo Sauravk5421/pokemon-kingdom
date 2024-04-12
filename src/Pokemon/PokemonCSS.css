@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #000; 
+}
+
+
+.head-content{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 80px 0;
+}
+
+
+
+.head-content h1{
+    position: absolute;
+    color: #fff;
+    font-size: 7vw;
+}
+
+
+.head-content h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.head-content h1:nth-child(2){
+    color: #fff;
+    animation: animate 4s ease-in-out infinite;
+}
+
+
+@keyframes animate{
+    0%, 100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%,100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
+
+
+.app-container{
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.rock {
+    background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+}
+
+.ghost {
+    background-image: linear-gradient(to top, #b7b7b8 0%, #e2ebf0 100%);
+}
+
+.electric {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+.bug {
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+
+.poison{
+    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+} 
+
+.normal {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+}
+
+.fairy{
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+
+.fire {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.grass {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.water{
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
+}
+.ground{
+    background-image: linear-gradient(315deg, #772f1a 0%, #f2a65a 74%);
+}
+
+#card{
+    padding: 15px;
+    height: 300px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+   
+}
+
+#card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.card-id{
+    background-color: #f3ecf2;
+    border-radius: 50%;
+    padding: 6px 6px;
+    margin-top: 20px;
+}
+
+.img1{
+    height: 95px;
+    width: 95px;
+}
+
+.card-name{
+    font-weight: bold;
+    text-decoration-line: underline;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+#more-btn{
+    padding: 8px;
+    width: 80%;
+    border-radius: 5px;
+    margin: 8px 0 18px 0;
+    cursor: pointer;
+}
+
+.load-more{
+    padding: 8px;
+    border-radius: 5px;
+    width: 25%;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    cursor: pointer;
+
+}
+
+.load-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
